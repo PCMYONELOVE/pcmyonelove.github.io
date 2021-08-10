@@ -54,35 +54,4 @@
   </entry>
   
   
-  
-  <entry>
-    <title>My First Post</title>
-    <link rel="alternate" type="text/html" href="https://pcmyonelove.github.io/my-first-post.md11" />
-    <id>https://pcmyonelove.github.io/my-first-post.md11</id>
-    
-    <author>
-      <name>Михаил</name>
-      <email>pcmyonelove@gmail.com</email>
-    </author>
-    
-    
-    <published>2018-08-08T02:27:00.000Z</published>
-    
-    
-    <updated>2018-08-08T02:27:00.000Z</updated>
-    
-    
-    <summary type="html">
-      
-Some content...
-
-
-    </summary>
-    
-    
-    
-    
-  </entry>
-  
-  
 </feed>

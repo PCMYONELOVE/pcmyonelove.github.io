@@ -16,6 +16,9 @@ menu:
   - name: Портфолио
     link: portfolio/
     icon: <i class="fas fa-briefcase"></i>
+  - name: Написать мне
+    link: obratnaya-svaz/
+    icon: <i class="fas fa-edit"></i>
   # - name: about
   #   link: about/
   #   icon: <i class="fas fa-user-edit"></i>

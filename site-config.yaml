@@ -1,0 +1,71 @@
+title: Заметки PcMyOneLove
+subtitle: /dev/null 2>&1
+description: Оправдываю не чужие ожидания
+author: Михаил
+email: pcmyonelove@gmail.com
+language: ru
+
+# Those makes up your site's full URL.
+baseURL: https://pcmyonelove.github.io
+rootDir: /
+
+# Those paths are relative to your site dir.
+srcDir: srcs
+docDir: docs
+themeDir: themes/main
+
+# Those paths are relative to `docDir`.
+# Set to `null` if you don't want them.
+indexDir: .
+archiveDir: archives
+categoryDir: categories
+tagDir: tags
+
+# Those paths are relative to `srcDir`.
+skipRender:
+  - README.md
+
+perPage:
+  index: 10
+  archives: 15
+  category: 15
+  tag: 15
+
+nunjucks:
+  autoescape: false
+
+marked:
+  gfm: true
+
+stylus:
+  compress: false
+  sourcemaps:
+    comment: true
+    inline: true
+    sourceRoot: ''
+    basePath: .
+
+highlight:
+  enable: false
+  gutter: false
+  hljs: true
+
+search:
+  enable: true
+  path:
+    - search/1.json
+    # - search/2.json
+    # - search/3.json
+  page: search/index.html
+
+feed:
+  enable: true
+  path: atom.xml
+  limit: 20
+  hub:
+  content: false
+  contentLimit: 140
+
+sitemap:
+  enable: true
+  path: sitemap.xml

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>Visual to Markdown</title>
+    <link rel="stylesheet" href="https://nhn.github.io/tui.editor/latest/examples/css/tuidoc-example-style.css" />
+    <!-- Editor's Dependencies -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.css"
+    />
+    <!-- Editor -->
+    <link rel="stylesheet" href="https://nhn.github.io/tui.editor/latest/dist/cdn/toastui-editor.css" />
+    <script>var errorLogs=[];window.onerror=function(o,r,e,n){errorLogs.push({message:o,source:r,lineno:e,colno:n})};</script>
+  </head>
+  <body>
+    <div class="tui-doc-description">
+      <strong
+        >The example code can be slower than your environment because the code is transpiled by
+        babel-standalone in runtime.</strong
+      >
+      <br />
+      You can see the tutorial
+      <a
+        href="https://github.com/nhn/tui.editor/blob/master/apps/editor/docs/getting-started.md"
+        rel="noopener noreferrer" target="_blank"
+        >here</a>
+    </div>
+    <div class="code-html tui-doc-contents">
+      <div id="editor"></div>
+    </div>
+    <!-- Added to check demo page in Internet Explorer -->
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script src="/js/md-default.js"></script>
+    <!-- Editor -->
+    <script src="https://nhn.github.io/tui.editor/latest/dist/cdn/toastui-editor-all.js"></script>
+    <script type="text/babel" class="code-js">
+      const editor = new toastui.Editor({
+        el: document.querySelector('#editor'),
+        previewStyle: 'vertical',
+        height: '87vh',
+        initialValue: content,
+        toolbarItems: [
+          'heading',
+          'bold',
+          'italic',
+          'strike',
+          'divider',
+          'hr',
+          'quote',
+          'divider',
+          'ul',
+          'ol',
+          'task',
+          'indent',
+          'outdent',
+          'divider',
+          'table',
+          'image',
+          'link',
+          'divider',
+          'code',
+          'codeblock',
+          'divider',
+          {
+            type: 'button',
+            options: {
+              el: saveButton(),
+              command: '',
+              tooltip: 'Save post'
+            }
+          }
+        ]
+      });
+      function saveButton() {
+        const button = document.createElement('button');
+
+        button.className = 'tui-toolbar-icons';
+        //button.innerHTML = `<i>Save post</i>`;
+        button.style.background = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABmJLR0QA/wD/AP+gvaeTAAAAs0lEQVRIie2WPQ6DMAxGXzJwqIrerN3pORi7cqWwtjegQymyUlMZCIlU8UleIvt7cv4BKuAG9MCQIJ7ABfBEapTkU5xkVC087mMTk4ICskqrkWOdhGntpwJ9OvNuxtgtAMU1mt81F+iRC/S9BfdScVBtrHciAM6/Epds59UqPnW7KMUdp0nee0O8RtbzY9Xk/X9rdIAOUBlQn4ETPNCKAevzYJF8Mlp4f4ca9G/X1gijd/UCDStihJWAousAAAAASUVORK5CYII=)';
+        button.style.backgroundPosition = 'center';
+        button.style.backgroundRepeat = 'no-repeat';
+        button.style.backgroundSize = '60%';
+
+        button.onclick = function() {
+          //alert(1);
+            var elHtml = editor.getMarkdown();
+            var link = document.createElement('a');
+            var mimeType = 'text/plain';
+            var title = elHtml.match(/^title: (.+?)$/im)[1];
+            title = translit(title);
+            title = title + '.md';
+
+            link.setAttribute('download', title);
+            link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
+            link.click();
+        };
+
+        return button;
+      }
+      function translit(word){
+        var answer = '';
+        var converter = {
+          'а': 'a',    'б': 'b',    'в': 'v',    'г': 'g',    'д': 'd',
+          'е': 'e',    'ё': 'e',    'ж': 'zh',   'з': 'z',    'и': 'i',
+          'й': 'y',    'к': 'k',    'л': 'l',    'м': 'm',    'н': 'n',
+          'о': 'o',    'п': 'p',    'р': 'r',    'с': 's',    'т': 't',
+          'у': 'u',    'ф': 'f',    'х': 'h',    'ц': 'c',    'ч': 'ch',
+          'ш': 'sh',   'щ': 'sch',  'ь': '',     'ы': 'y',    'ъ': '',
+          'э': 'e',    'ю': 'yu',   'я': 'ya',
+
+          'А': 'A',    'Б': 'B',    'В': 'V',    'Г': 'G',    'Д': 'D',
+          'Е': 'E',    'Ё': 'E',    'Ж': 'Zh',   'З': 'Z',    'И': 'I',
+          'Й': 'Y',    'К': 'K',    'Л': 'L',    'М': 'M',    'Н': 'N',
+          'О': 'O',    'П': 'P',    'Р': 'R',    'С': 'S',    'Т': 'T',
+          'У': 'U',    'Ф': 'F',    'Х': 'H',    'Ц': 'C',    'Ч': 'Ch',
+          'Ш': 'Sh',   'Щ': 'Sch',  'Ь': '',     'Ы': 'Y',    'Ъ': '',
+          'Э': 'E',    'Ю': 'Yu',   'Я': 'Ya'
+        };
+
+        for (var i = 0; i < word.length; ++i ) {
+          if (converter[word[i]] == undefined){
+            answer += word[i];
+          } else {
+            answer += converter[word[i]];
+          }
+        }
+
+        return answer.replace(/\s/g, '-').toLowerCase();
+      }
+    </script>
+  </body>
+</html>

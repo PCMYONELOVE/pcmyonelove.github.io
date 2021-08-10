@@ -1,0 +1,8 @@
+{
+  "name": "blog-test",
+  "dependencies": {
+    "hikaru-generator-feed": "latest",
+    "hikaru-generator-search": "latest",
+    "hikaru-generator-sitemap": "latest"
+  }
+}

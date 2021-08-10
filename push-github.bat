@@ -1,0 +1,1 @@
+hikaru clean --debug & hikaru build --debug & git add --all & git commit --message "Updated blog." & git push --set-upstream origin master

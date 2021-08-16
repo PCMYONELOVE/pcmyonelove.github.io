@@ -448,21 +448,21 @@ Some content...
       
       <div class="archives-count count-block">
         <div class="site-count-title">Архивы</div>
-        <div><a href="/archives/">1</a></div>
+        <div><a href="/archives/">2</a></div>
       </div>
       
       
       
       <div class="categories-count count-block">
         <div class="site-count-title">Категории</div>
-        <div><a href="/categories/">1</a></div>
+        <div><a href="/categories/">2</a></div>
       </div>
       
       
       
       <div class="tags-count count-block">
         <div class="site-count-title">Тэги</div>
-        <div><a href="/tags/">1</a></div>
+        <div><a href="/tags/">8</a></div>
       </div>
       
       
@@ -484,7 +484,7 @@ Some content...
     
     <hr>
     <div class="social-link sidebar-item">
-      <div><i class="far fa-address-card"></i>Social Links</div>
+      <div><i class="far fa-address-card"></i>Контакты</div>
       <ul>
         
         <li><i class="fas fa-envelope"></i><a href="mailto:pcmyonelove@gmail.com" target="_blank" rel="external nofollow noreferrer noopener">E-Mail</a></li>
@@ -499,7 +499,7 @@ Some content...
     
     <hr>
     <div class="blogroll sidebar-item">
-      <div><i class="fas fa-user-friends"></i>Blogroll</div>
+      <div><i class="fas fa-user-friends"></i>Полезные ссылки</div>
       <ul>
         
         <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank" rel="external nofollow noreferrer noopener">GitHub</a></li>
@@ -539,7 +539,7 @@ Some content...
           
         </div>
         <div class="powered-by">
-          Работает на <a href="https://hikaru.alynx.one/" target="_blank" rel="external nofollow noreferrer noopener">Hikaru</a><i class="fab fa-node-js"></i>Тема <a href="https://github.com/AlynxZhou/hikaru-theme-aria/" target="_blank" rel="external nofollow noreferrer noopener">ARIA</a>
+          Работает на <a href="https://hikaru.alynx.one/" target="_blank" rel="external nofollow noreferrer noopener">Hikaru</a><i class="fab fa-node-js"></i>Шаблон <a href="https://github.com/AlynxZhou/hikaru-theme-aria/" target="_blank" rel="external nofollow noreferrer noopener">ARIA</a>
         </div>
       </div>
     </div>
@@ -556,4 +556,4 @@ Some content...
   </script>
   </body>
 </html>
-<!-- Page built by Hikaru v1.8.1 at 2021-08-10T10:29:44.874Z. -->
+<!-- Page built by Hikaru v1.8.1 at 2021-08-16T12:56:57.052Z. -->

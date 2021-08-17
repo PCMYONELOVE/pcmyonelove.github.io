@@ -448,21 +448,21 @@ Some content...
       
       <div class="archives-count count-block">
         <div class="site-count-title">Архивы</div>
-        <div><a href="/archives/">2</a></div>
+        <div><a href="/archives/">1</a></div>
       </div>
       
       
       
       <div class="categories-count count-block">
         <div class="site-count-title">Категории</div>
-        <div><a href="/categories/">2</a></div>
+        <div><a href="/categories/">1</a></div>
       </div>
       
       
       
       <div class="tags-count count-block">
         <div class="site-count-title">Тэги</div>
-        <div><a href="/tags/">8</a></div>
+        <div><a href="/tags/">1</a></div>
       </div>
       
       
@@ -556,4 +556,4 @@ Some content...
   </script>
   </body>
 </html>
-<!-- Page built by Hikaru v1.8.1 at 2021-08-17T15:27:35.282Z. -->
+<!-- Page built by Hikaru v1.8.1 at 2021-08-17T18:33:27.589Z. -->

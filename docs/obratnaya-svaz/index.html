@@ -18,8 +18,8 @@
     
 
     <!-- PWA -->
-    <link rel="manifest" href="/manifest.json?v1">
-    <link rel="prefetch" href="/manifest.json?v1">
+    <link rel="manifest" href="/easy-pwa-manifest.json">
+    <link rel="prefetch" href="/easy-pwa-manifest.json">
 
     <meta name="generator" content="Hikaru v1.8.1">
     <link rel="canonical" href="https://pcmyonelove.github.io/obratnaya-svaz/">
@@ -247,9 +247,12 @@
 
     <!-- PWA -->
     
-    <script type='text/javascript' id='pwa-register-sw-js-extra'>/* <![CDATA[ */var pwa_sw = {"url":"\/js\/pwa-sw.js?v1","disable_addtohome":"0","enableOnDesktop":""};/* ]]> */</script>
-    <script type='text/javascript' src='https://pcmyonelove.github.io//js/register-sw.js/?v1' id='pwa-register-sw-js'></script>
-    
+    <!-- Easy PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#33363b">
+    <meta name="apple-mobile-web-app-title" content="Блог PcMyOneLove">
+    <meta name="msapplication-TileColor" content="#33363b">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Обратная связь - Заметки PcMyOneLove</title>
   </head>
@@ -607,6 +610,8 @@ window.onload = function() {
       var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
       })('https://widget.replain.cc/dist/client.js');
   </script>
+  <!-- Easy PWA -->
+  <script src="/js/easy-pwa-loader.js"></script>
   </body>
 </html>
-<!-- Page built by Hikaru v1.8.1 at 2021-08-26T06:32:32.921Z. -->
+<!-- Page built by Hikaru v1.8.1 at 2021-08-26T06:46:53.214Z. -->

@@ -2,7 +2,7 @@ self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
   event.waitUntil(
     caches.open('static').then(function(cache) {
-      cache.addAll(['', '/js/easy-pwa-loader.js', '/easy-pwa-manifest.json']);
+      cache.addAll(['/', '/js/easy-pwa-loader.js', '/easy-pwa-manifest.json']);
     })
   );
 });

@@ -12,7 +12,7 @@
     {
       "src": "https:\/\/pcmyonelove.github.io\/favicons\/ic_launcher.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image\/png"
     }
   ],
   "background_color": "#ffffff",
@@ -20,5 +20,5 @@
   "display": "standalone",
   "orientation": "any",
   "start_url": ".",
-  "scope": "/"
+  "scope": "\/"
 }

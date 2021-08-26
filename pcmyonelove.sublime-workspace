@@ -1,0 +1,547 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"da",
+				"data\tabc"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/SASS Build/SASS - Compressed.sublime-build",
+					""
+				],
+				[
+					"Packages/SASS Build/SASS.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SASS Build/SASS.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gsta",
+				"Git: Status"
+			],
+			[
+				"gpush",
+				"Git: Push Current Branch"
+			],
+			[
+				"gst",
+				"Git: Status"
+			],
+			[
+				"gpus\t",
+				"Git: Push Current Branch"
+			],
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"GIT PU",
+				"Git: Push Current Branch"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"gstatu",
+				"Git: Status"
+			],
+			[
+				"gpu",
+				"Git: Push Current Branch"
+			],
+			[
+				"git pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"gmer",
+				"Git: Merge"
+			],
+			[
+				"git ",
+				"Git: Checkout Commit"
+			],
+			[
+				"gcomm",
+				"Git: Commit"
+			],
+			[
+				"gmerg",
+				"Git: Merge"
+			],
+			[
+				"git check",
+				"Git: Checkout"
+			],
+			[
+				"git checko",
+				"Git: Checkout Remote Branch"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git che",
+				"Git: Checkout Remote Branch"
+			],
+			[
+				"gpus",
+				"Git: Push Current Branch"
+			],
+			[
+				"git fe",
+				"Git: Fetch"
+			],
+			[
+				"git chec",
+				"Git: Checkout New Branch"
+			],
+			[
+				"git br",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git merg",
+				"Git: Merge"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git c",
+				"Git: Checkout Remote Branch"
+			],
+			[
+				"git in",
+				"Git: Init"
+			],
+			[
+				"snaps",
+				"Git: Snapshot"
+			],
+			[
+				"git re",
+				"Git: Checkout Remote Branch"
+			],
+			[
+				"git fet",
+				"Git: Fetch"
+			],
+			[
+				"git fetc",
+				"Git: Fetch"
+			],
+			[
+				"git",
+				"Git: Checkout Commit"
+			],
+			[
+				"g",
+				"Git: Pull"
+			],
+			[
+				"gche",
+				"Git: Checkout Commit"
+			],
+			[
+				"gp",
+				"Git: Push Current Branch"
+			],
+			[
+				"gstat",
+				"Git: Status"
+			],
+			[
+				"COMM",
+				"Git: Checkout Commit"
+			],
+			[
+				"GSTA",
+				"Git: Status"
+			],
+			[
+				"Package Control: in\t",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins\t",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: IN\t",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Add Channel"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Admin/Documents/WEB/pcmyonelove",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/layouts"
+	],
+	"file_history":
+	[
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/functions/multisite.php",
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/functions/filesystem.php",
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/functions/common.php",
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/functions/index.php",
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/includes/index.php",
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/superpwa.php",
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/loader.php",
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/public/manifest.php",
+		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/addons/caching-strategies.php",
+		"/C/Workspace/PWA/superpwa-manifest.json",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/srcs/zametki/tor/kak-sozdat-sayt-v-darknete-i-poluchit-domen-onion-besplatno.md",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/srcs/portfolio/index.md",
+		"/C/Users/Admin/Desktop/manifest.json",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/srcs/my-first-post.md",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/srcs/zametki/pervaya-zapis/index.md",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/srcs/404.md",
+		"/C/Workspace/NULLED/us (1).php",
+		"/C/Workspace/NULLED/OCTemplates-Ultra-store-2.1-Nulled/OCTemplates-Ultra-store-2.1/upload/catalog/controller/extension/analytics/oct_analytics.php",
+		"/C/Workspace/NULLED/OCTemplates-Ultra-store-2.1-Nulled/OCTemplates-Ultra-store-2.1/upload/min/lib/FirePHP.php",
+		"/C/www/OpenServer/domains/nyaoi.local/public_html/admin/controller/extension/dashboard/domovoy.php",
+		"/C/Workspace/ocStore/unishop2-1.9.0.0/backup/unishop2_backup_full.sql",
+		"/C/www/OpenServer/domains/nyaoi.local/public_html/admin/config.php",
+		"/C/www/OpenServer/domains/nyaoi.local/public_html/config.php",
+		"/F/__HLS/hls_test2/index.m3u8",
+		"/F/__HLS/hls_test/index.m3u8",
+		"/F/__HLS/key.key",
+		"/F/__HLS/key.keyinfo",
+		"/C/www/OpenServer/domains/hls.local/index.html",
+		"/C/www/OpenServer/domains/hls.local/index.m3u8",
+		"/C/www/OpenServer/domains/hls.local/index3.html",
+		"/E/AiBolit PHP/site/templates/jwplayer/template.php",
+		"/E/AiBolit PHP/site/templates/jwplayer/index.php",
+		"/F/__HLS/hls_mkv/index.m3u8.key",
+		"/F/__HLS/hls_mkv/index.m3u8",
+		"/F/__HLS/index.m3u8",
+		"/C/Workspace/main_gd.js",
+		"/F/_ Android/BatchApkTool375/BatchApkTool/_INPUT_APK/app-debug/assets/test.html",
+		"/F/_ Android/BatchApkTool375/BatchApkTool/_INPUT_APK/app-debug/assets/index.html",
+		"/F/_ Android/BatchApkTool375/BatchApkTool/_INPUT_APK/app-debug/smali/com/liteotaku/cadencetube/app/MainActivity$1.smali",
+		"/F/_ Android/BatchApkTool375/BatchApkTool/_INPUT_APK/app-debug/smali/com/liteotaku/app/MainActivity.smali",
+		"/F/_ Android/BatchApkTool375/BatchApkTool/_INPUT_APK/app-debug/original/AndroidManifest.xml",
+		"/F/_ Android/BatchApkTool375/BatchApkTool/_INPUT_APK/app-debug/AndroidManifest.xml",
+		"/F/_ Android/android-14_r04/android-4.0.2/licenses/android-sdk-preview-license",
+		"/F/_ Android/android-14_r04/android-4.0.2/licenses/android-sdk-license",
+		"/F/_ Android/BatchApkTool375/BatchApkTool/_INPUT_APK/NewpipeLegacyAPI-14/AndroidManifest.xml",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/css/style.css.map",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/layouts/_footer.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/common/config/main-local.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/.htaccess",
+		"/C/Users/Admin/AppData/Local/Temp/scp23004/public_html/TextToImage.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/widgets/news/views/slides.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/common/messages/ru/frontend.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/css/history/style.scss",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/history-photo/index.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/vendor/guzzlehttp/psr7/src/PumpStream.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/assets/AppAsset.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/css/style.css",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/structure/index.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/js/script.js",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/css/history/style.css",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/for-student/index.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/console/migrations/m210706_204356_update_library_sites_3.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/css/journal-archive/style.scss",
+		"/C/www/OpenServer/domains/playground.local/ietestcss2.html",
+		"/C/www/OpenServer/domains/playground.local/ietestcss.html",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/exhibition/index.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/css/style.scss",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/layouts/main.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/layouts/_header.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/console/migrations/m190809_071608_create_page_table.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/console/migrations/m190822_121327_create_history_language_table.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/schedule/index.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/controllers/PageController.php",
+		"/C/Users/Admin/Downloads/Telegram Desktop/libra_nsu_ru.sql/libra_nsu_ru.sql",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/js/history/script.js",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/web/js/slider/script.js",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/widgets/slider/views/slider.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/publisher/index.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/frontend/views/search/_item.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/composer.json",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/backend/controllers/TestAccessController.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/backend/views/test-access/view.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/console/migrations/m210616_042259_create_test_access_file_table.php",
+		"/C/www/OpenServer/domains/meting.top/index.php",
+		"/C/Workspace/Каптча/ir_captcha/ir_captcha.captcha.inc",
+		"/C/Workspace/Каптча/ir_captcha/ir_captcha.module",
+		"/C/Workspace/Каптча/ir_captcha/ir_captcha.test",
+		"/C/Workspace/Каптча/ir_captcha/ir_captcha.admin.inc",
+		"/C/Users/Admin/AppData/Local/Temp/scp57502/public_html/qiwi_receive.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp00888/public_html/qiwi.class.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp01007/public_html/webhook.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp00489/public_html/test.php",
+		"/C/Users/Admin/Pictures/temp/classes.dex.txt",
+		"/C/www/OpenServer/domains/mjpeg.local/stream.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp59927/public_html/test2.php",
+		"/C/Users/Admin/Desktop/cache.class.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp50494/public_html/test.txt",
+		"/C/Users/Admin/AppData/Local/Temp/scp06974/public_html/task_async.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp29300/public_html/test3.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp32786/public_html/receiver.txt",
+		"/C/Users/Admin/AppData/Local/Temp/scp36038/public_html/curl_debug.txt",
+		"/C/Users/Admin/AppData/Local/Temp/scp32942/public_html/tg.class.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp01774/public_html/qiwi.class.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp21173/error_log",
+		"/C/www/OpenServer/domains/test.top/curlCliend.php",
+		"/C/www/OpenServer/domains/distantschool.nsu.local/www/.htaccess",
+		"/C/Users/Admin/AppData/Local/Temp/scp02477/public_html/cache.class.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp04452/public_html/test.txt",
+		"/C/Users/Admin/AppData/Local/Temp/scp16022/error_log",
+		"/C/Users/Admin/AppData/Local/Temp/scp15260/public_html/webhook.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp28973/public_html/webhook.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp52527/public_html/task_debug.txt",
+		"/C/Users/Admin/AppData/Local/Temp/scp41027/public_html/curl_debug_.txt",
+		"/C/Users/Admin/AppData/Local/Temp/scp29261/public_html/test1.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp36775/public_html/qiwi_pay_simple.php_",
+		"/C/Users/Admin/AppData/Local/Temp/scp53007/public_html/qiwi_receiver.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp27998/public_html/qiwi_pay_simple.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp06342/public_html/tg.class.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp08486/public_html/test.txt",
+		"/C/Users/Admin/AppData/Local/Temp/scp56866/public_html/TextToImage.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp07906/public_html/test2.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp14415/error_log",
+		"/C/Users/Admin/AppData/Local/Temp/scp23924/public_html/webhook.php",
+		"/C/Users/Admin/AppData/Local/Temp/scp52115/public_html/qiwi.class.php",
+		"/C/Users/Admin/Desktop/tgbot/бекап 2/qiwi.class.php",
+		"/C/www/OpenServer/domains/libra.nsu.local/www/.gitignore",
+		"/C/Users/Admin/AppData/Local/Temp/scp00127/public_html/tg.class.php",
+		"/C/Users/Admin/Desktop/tgbot/бекап 2/webhook.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 114.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 139.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-checkout":
+	{
+		"height": 151.0
+	},
+	"output.git-commit":
+	{
+		"height": 137.0
+	},
+	"output.git-fetch":
+	{
+		"height": 151.0
+	},
+	"output.git-init":
+	{
+		"height": 139.0
+	},
+	"output.git-merge":
+	{
+		"height": 151.0
+	},
+	"output.git-pull":
+	{
+		"height": 151.0
+	},
+	"output.git-push":
+	{
+		"height": 206.0
+	},
+	"output.git-remote":
+	{
+		"height": 151.0
+	},
+	"pinned_build_system": "",
+	"project": "pcmyonelove.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gpus",
+				"www\\vendor\\guzzlehttp\\psr7\\src\\PumpStream.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 466.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

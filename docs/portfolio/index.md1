@@ -18,8 +18,8 @@
     
 
     <!-- PWA -->
-    <link rel="manifest" href="/manifest.json">
-    <link rel="prefetch" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json?v1">
+    <link rel="prefetch" href="/manifest.json?v1">
 
     <meta name="generator" content="Hikaru v1.8.1">
     <link rel="canonical" href="https://pcmyonelove.github.io/portfolio/index.md1">
@@ -568,4 +568,4 @@ Some content...
   </script>
   </body>
 </html>
-<!-- Page built by Hikaru v1.8.1 at 2021-08-26T06:27:07.491Z. -->
+<!-- Page built by Hikaru v1.8.1 at 2021-08-26T06:30:36.967Z. -->

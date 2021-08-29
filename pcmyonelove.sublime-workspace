@@ -11,6 +11,89 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "themes/main/layouts/layout.njk",
+			"settings":
+			{
+				"buffer_size": 16344,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/C/Portable_Soft/Sublime Text 3/Data/Packages/User/Default.sublime-keymap",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSublime Bookmarks\n-----------------\n\n  Thanks for installing *SublimeBookmarks*. I hope this plugin helps you :)\n\n  To Use\n  ======\n\n  Visit the github page for a quick intro. [https://github.com/bollu/sublimeBookmark]\n\n  Press Ctrl+P (or) Cmd+P depending on your OS.\n  Use _Add Bookmark_ to add a bookmark.\n  Use _Goto Bookmark_ to goto a bookmark\n  Use _Remove Bookmark_ to remove a bookmark\n  Use _Remove All Bookmarks_ to clear the list of bookmarks\n\n  There are three modes to the plugin:\n  1) All bookmarks will be shown all the time - bookmarks will not be filtered based on the current project. For this mode, use the __Show All Bookmarks__ option.\n\n  2)Only bookmarks of the current project will be shown - bookmarks belonging to other projects are *NOT* shown in this mode. Use the Use the __Show Bookmarks In Current Project__ for this mode.\n\n  3) Only bookmarks in the current file is shown - irrespective of project. Use the __Show Bookmarks In Current File__ option for this mode.\n\n  I hope you enjoy using the plugin as much as I enjoyed writing it :)\n\n  Thanks again!\n  ~(bollu)[https://github.com/bollu/]",
+			"settings":
+			{
+				"buffer_size": 1172,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "themes/main/srcs/pwa-manifest.json",
+			"settings":
+			{
+				"buffer_size": 596,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/srcs/easy-pwa-manifest.json",
+			"settings":
+			{
+				"buffer_size": 499,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/main/srcs/js/register-sw.js___",
+			"settings":
+			{
+				"buffer_size": 4394,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/srcs/js/pwa-loader.js___",
+			"settings":
+			{
+				"buffer_size": 358,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/srcs/js/easy-pwa-loader.js",
+			"settings":
+			{
+				"buffer_size": 355,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/srcs/easy-pwa-sw.js",
+			"settings":
+			{
+				"buffer_size": 856,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -39,6 +122,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
 			[
 				"gsta",
 				"Git: Status"
@@ -200,10 +287,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
 				"Package Control: ins\t",
 				"Package Control: Install Package"
 			],
@@ -251,10 +334,18 @@
 		"/C/Users/Admin/Documents/WEB/pcmyonelove",
 		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes",
 		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main",
-		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/layouts"
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/layouts",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/srcs",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/srcs/favicons",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/srcs/js"
 	],
 	"file_history":
 	[
+		"/C/Users/Admin/Desktop/PWA/manifest.json",
+		"/C/Portable_Soft/Sublime Text 3/Data/Packages/TodoReview/TodoReview.sublime-settings",
+		"/C/Portable_Soft/Sublime Text 3/Data/Packages/User/TodoReview.sublime-settings",
+		"/C/Portable_Soft/Sublime Text 3/Data/Packages/SublimeBookmarks/Default.sublime-keymap",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/srcs/js/pwa-sw.js",
 		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/functions/multisite.php",
 		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/functions/filesystem.php",
 		"/C/Users/Admin/Documents/TMP/super-progressive-web-apps/functions/common.php",
@@ -377,12 +468,7 @@
 		"/C/Users/Admin/AppData/Local/Temp/scp56866/public_html/TextToImage.php",
 		"/C/Users/Admin/AppData/Local/Temp/scp07906/public_html/test2.php",
 		"/C/Users/Admin/AppData/Local/Temp/scp14415/error_log",
-		"/C/Users/Admin/AppData/Local/Temp/scp23924/public_html/webhook.php",
-		"/C/Users/Admin/AppData/Local/Temp/scp52115/public_html/qiwi.class.php",
-		"/C/Users/Admin/Desktop/tgbot/бекап 2/qiwi.class.php",
-		"/C/www/OpenServer/domains/libra.nsu.local/www/.gitignore",
-		"/C/Users/Admin/AppData/Local/Temp/scp00127/public_html/tg.class.php",
-		"/C/Users/Admin/Desktop/tgbot/бекап 2/webhook.php"
+		"/C/Users/Admin/AppData/Local/Temp/scp23924/public_html/webhook.php"
 	],
 	"find":
 	{
@@ -400,6 +486,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"shortcut icon",
+			"mask-icon",
+			"apple-mobile-web-app-capable"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -417,8 +506,418 @@
 	"groups":
 	[
 		{
+			"selected": 8,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "themes/main/layouts/layout.njk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16344,
+						"regions":
+						{
+							"col_33363BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										14981,
+										14988
+									],
+									[
+										15113,
+										15120
+									]
+								],
+								"scope": "col_33363BFF"
+							},
+							"col_33363BFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_33363BFF_circle.png",
+								"regions":
+								[
+									[
+										14917,
+										14917
+									],
+									[
+										15063,
+										15063
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										15161,
+										15168
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										15123,
+										15123
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								16201,
+								16201
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7154.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Portable_Soft/Sublime Text 3/Data/Packages/User/Default.sublime-keymap",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								696,
+								696
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"default_dir": "C:\\Users\\Admin\\Documents\\WEB\\pcmyonelove\\themes\\main\\layouts",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "themes/main/srcs/pwa-manifest.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 596,
+						"regions":
+						{
+							"col_33363BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										498,
+										505
+									]
+								],
+								"scope": "col_33363BFF"
+							},
+							"col_33363BFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_33363BFF_circle.png",
+								"regions":
+								[
+									[
+										480,
+										480
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										470,
+										477
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										447,
+										447
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								499,
+								505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "themes/main/srcs/easy-pwa-manifest.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 499,
+						"regions":
+						{
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										224,
+										231
+									],
+									[
+										257,
+										264
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										206,
+										206
+									],
+									[
+										234,
+										234
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "themes/main/srcs/js/register-sw.js___",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "themes/main/srcs/js/pwa-loader.js___",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								353,
+								353
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "themes/main/srcs/js/easy-pwa-loader.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "themes/main/srcs/easy-pwa-sw.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								592,
+								592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

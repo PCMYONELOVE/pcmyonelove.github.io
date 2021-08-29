@@ -6,6 +6,8 @@ if ('serviceWorker' in navigator) {
         'Service Worker registration successful with scope: ',
         registration.scope
       );
+      // Можно вывести сообщение о том что что приложение установлено
+      // Eventы: appinstalled, beforeinstallprompt
     })
     .catch(function(err) {
       console.log('Service Worker registration failed: ', err);

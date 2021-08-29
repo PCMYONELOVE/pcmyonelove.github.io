@@ -1,7 +1,7 @@
 'use strict';
-const cacheName = 'pcmyonelove-github-io-pwa';
-const startPage = 'https://pcmyonelove.github.io';
-const offlinePage = 'https://pcmyonelove.github.io';
+const cacheName = window.location.host.replace(/\./g, '-') + '-pwa';
+const startPage = window.location.origin;
+const offlinePage = window.location.origin;
 const filesToCache = [startPage, offlinePage];
 const neverCacheUrls = [];
 self.addEventListener('install', function(e) {

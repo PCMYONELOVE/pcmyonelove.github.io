@@ -36,7 +36,7 @@ if (type === 'film' || type === 'series') {
     banner.style.width = '32px';
     banner.style.height = '128px';
     banner.style.top = '-128px';
-    banner.style.left = '8px';
+    banner.style.left = '85px';
     banner.style.outline = 'none';
     banner.style.cursor = 'pointer';
     banner.style.position = 'fixed';

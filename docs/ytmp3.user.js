@@ -63,7 +63,7 @@ function ytIdFromUrl(url){
 
 // Open page with film player
 function openPlayer() {
-    const watchPage = `https://pcmyonelove.github.io/ytbtn.html#${id}`;
+    const watchPage = `https://pcmyonelove.github.io/ytbtn2.html#${id}`;
     const filmTab = window.open(watchPage, '_blank');
     filmTab.focus();
 }

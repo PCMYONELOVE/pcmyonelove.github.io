@@ -68,6 +68,14 @@ function restore() {
         $('#progress').html(a[1] + ' <i id="icondownload" class="fa fa-download" aria-hidden="true"></i>')
     }, timeout)
 }
+
+// Get yt id from url
+$(document).ready(function () {
+    const ytid = window.location.hash;
+    if(ytid){
+        $('#vid').val(ytid.slice(1));
+    }
+});
 </script>
 </body>
 </html>

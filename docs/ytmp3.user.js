@@ -24,7 +24,10 @@ const bannerImage = `
 
 // Get id from url
 const url = window.location.href;
-const id = ytIdFromUrl(url);
+var id = ytIdFromUrl(url);
+
+console.info('YT url: ' + url);
+console.info('YT id: ' + id);
 
 // Show banner
 if (url.indexOf('view')) {
@@ -63,7 +66,7 @@ function ytIdFromUrl(url){
 
 // Open page with film player
 function openPlayer() {
-    const watchPage = `https://pcmyonelove.github.io/ytbtn2.html#${id}`;
+    const watchPage = `https://pcmyonelove.github.io/ytbtn2.html?v1#${id}`;
     const filmTab = window.open(watchPage, '_blank');
     filmTab.focus();
 }

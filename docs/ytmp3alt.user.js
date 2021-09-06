@@ -61,7 +61,7 @@ const bannerCode = `
 </style>
 <div class="savevideo-panel">
   <a id="ytsavemp3" onclick="openButton('mp3')" href="#">Скачать <b>mp3</b></a>
-  <a id="ytsavevideo" onclick="openButton('video')" href="#">Скачать <b>видео</b></a>
+  <a id="ytsavevideo" onclick="openButton('videos')" href="#">Скачать <b>видео</b></a>
 </div>
 `;
 

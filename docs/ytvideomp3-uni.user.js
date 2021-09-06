@@ -100,14 +100,14 @@ function ytIdFromUrl(url){
 
 // Open page with film player
 function getMp3Btn() {
-    const watchPage = `https://pcmyonelove.github.io/ytbtn2-mp3.html?v1#${id}`;
+    const watchPage = `https://pcmyonelove.github.io/ytbtn2-mp3.html?v5#${id}`;
     const filmTab = window.open(watchPage, '_blank');
     filmTab.focus();
 }
 
 // Open page with film player
 function getVideoBtn() {
-    const watchPage = `https://pcmyonelove.github.io/ytbtn2-videos.html?v1#${id}`;
+    const watchPage = `https://pcmyonelove.github.io/ytbtn2-videos.html?v5#${id}`;
     const filmTab = window.open(watchPage, '_blank');
     filmTab.focus();
 }

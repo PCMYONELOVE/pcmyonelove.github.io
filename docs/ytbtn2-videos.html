@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>YT Download API</title>
+<meta name="robots" content="noindex" />
+<meta name="keywords" content="">
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta charset="UTF-8">
+<meta name="referrer" content="no-referrer">
+<style type="text/css">
+html,body{height:100%;padding:0;margin:0;overflow:hidden}body{font-family:'Open Sans',sans-serif;font-size:28px;}@media(max-height:150px) and (max-width:400px){body{font-size:18px}}@media(max-height:50px) and (max-width:200px){body{font-size:14px}}button{font-size:1.2em;border-radius:0;border:0;font-family:'Open Sans',sans-serif;height:100%;width:100%;padding:0;margin:0;cursor:pointer}#downloadButton{color:white;background-color:#F44336;margin:auto;font-weight: 600}.buttonTitle{font-size:.45em;margin-top:4px;display:none}#container{height:100%;text-align:center;margin:auto;padding:0}#downloadButton:hover{filter:brightness(95%);-webkit-transition-duration:.2s;-webkit-transition-delay:.15s;transition-duration:.2s;transition-delay:.15s}.disableButton{pointer-events:none}
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous" />
+</head>
+<body id="converter">
+<input type="hidden" id="hash" value="">
+<input type="hidden" id="vid" value="GvSrDbr0KvI">
+<input type="hidden" id="for" value="videos">
+<input type="hidden" id="id" value="">
+<div id="container">
+<a href="#" rel="nofollow" id="final">
+<button id="downloadButton">
+<div id="progress"><span>Скачать видео</span> <i id="icondownload" class="fa fa-download" aria-hidden="true"></i></div>
+<div id="title" class="buttonTitle"></div>
+</button>
+</a>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+var a = ['Подготовка', 'Скачать видео', 'Скачивается', 'Ошибка.. Повторите попытку позже'];
+
+function loadjs() {
+    if ($('#final').attr('href') == '#') {
+        $('#progress').html(a[0] + ' <i id="iconspin" class="fa fa-cog fa-spin"></i>');
+        $.ajax({
+            headers: {
+                origin: 'https://www.yt-download.org'
+            },
+            url: 'https://www.yt-download.org/api/button/' + $('#for').val() + '/' + $('#vid').val(),
+            type: 'GET',
+            dataType: 'html',
+            success: function (result) {
+                var link = $(result).find('.shadow-xl').first().attr('href');
+                $('#final').attr('href', link);
+                if (link != undefined) {
+                    $('#progress').html(a[1] + ' <i id="icondownload" class="fa fa-download" aria-hidden="true"></i>')
+                } else {
+                    $('#progress').html(a[3] + ' <i id="icondownload" class="fa fa-thumbs-down" aria-hidden="true"></i>')
+                }
+            }
+        })
+    } else {
+        $('#progress').html(a[2] + ' <i id="iconspin" class="fa fa-cog fa-spin"></i>');
+        restore()
+    }
+}
+$('#downloadButton').click(function () {
+    loadjs()
+});
+
+function restore() {
+    var timeout = 3e3;
+    if ($('#for').val() == 'videos') {
+        timeout = 6e3
+    };
+    setTimeout(function () {
+        $('#progress').html(a[1] + ' <i id="icondownload" class="fa fa-download" aria-hidden="true"></i>')
+    }, timeout)
+}
+
+// Get yt id from url
+$(document).ready(function () {
+    const ytid = window.location.hash;
+    if(ytid){
+        $('#vid').val(ytid.slice(1));
+    }
+});
+</script>
+</body>
+</html>

@@ -6,6 +6,10 @@
 // @author       PcMyOneLove
 // @match       *://youtube.com/*
 // @match       *://www.youtube.com/*
+// @match       *://tube.cadence.moe/*
+// @match       *://yewtu.be/*
+// @match       *://invidious.snopyta.org/*
+// @match       *://invidious-jp.kavin.rocks    /*
 // @grant        none
 // ==/UserScript==
 

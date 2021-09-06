@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YT MP3 Download
 // @namespace    yt-mp3-download
-// @version      0.1
+// @version      0.5
 // @description  Download mp3 from YouTube video
 // @author       PcMyOneLove
 // @match       *://youtube.com/*
@@ -14,8 +14,7 @@
 // ==/UserScript==
 
 // Image of the banner
-const bannerCode = `
-<style>
+const myStyles__styles = `
 .savevideo-panel{
     width: auto;
     padding-left: 12px;
@@ -58,11 +57,6 @@ const bannerCode = `
 .savevideo-panel > a:last-child{
   border-top-right-radius: 8px;
 }
-</style>
-<div class="savevideo-panel">
-  <a id="ytsavemp3" href="#">Скачать <b>mp3</b></a>
-  <a id="ytsavevideo" href="#">Скачать <b>видео</b></a>
-</div>
 `;
 
 // Get id from url
@@ -72,23 +66,39 @@ var id = ytIdFromUrl(url);
 console.info('YT url: ' + url);
 console.info('YT id: ' + id);
 
-// Show banner
+// Show panelWrap
 if (url.indexOf('view')) {
 
-    // Create banner element
-    const banner = document.createElement('div');
-    banner.innerHTML = bannerCode;
+    // Create panelWrap element
+    const panelWrap = document.createElement('div');
+    //panelWrap.innerHTML = bannerCode;
 
-    // Show banner after timeout
+    const panel = panelWrap.createElement('div');
+    panel.class = 'savevideo-panel';
+
+    var link1 = panel.createElement('a');
+    link1.innerHTML = 'Скачать <b>mp3</b>';
+    link1.href = '#!';
+
+    var link2 = panel.createElement('a');
+    link2.innerHTML = 'Скачать <b>видео</b>';
+    link2.href = '#!';
+
+    // Show panelWrap after timeout
     setTimeout(() => {
-        banner.querySelectorAll('a')[0].onclick = getMp3Btn;
-        banner.querySelectorAll('a')[1].onclick = getVideoBtn;
-        banner.onmouseover = () => {banner.style.top = '0px'};
-        banner.onmouseout = () => {banner.style.top = '-32px'};
+        link1.onclick = getMp3Btn;
+        link2.onclick = getVideoBtn;
+        //banner.onmouseover = () => {banner.style.top = '0px'};
+        //banner.onmouseout = () => {banner.style.top = '-32px'};
     }, 1000);
 
-    // Add banner to the page
-    document.body.appendChild(banner);
+    // Add panelWrap to the page
+    document.body.appendChild(panelWrap);
+
+    // Add custom css
+    const myStyles = document.createElement('style');
+    myStyles.innerHTML = myStyles__styles;
+    document.head.appendChild(myStyles);
 }
 
 // Get Youtube ID from url
@@ -98,14 +108,14 @@ function ytIdFromUrl(url){
     return (match&&match[7].length==11)? match[7] : false;
 }
 
-// Open page with film player
+// get mp3 btn
 function getMp3Btn() {
     const watchPage = `https://pcmyonelove.github.io/ytbtn2-mp3.html?v5#${id}`;
     const filmTab = window.open(watchPage, '_blank');
     filmTab.focus();
 }
 
-// Open page with film player
+// get video btn
 function getVideoBtn() {
     const watchPage = `https://pcmyonelove.github.io/ytbtn2-videos.html?v5#${id}`;
     const filmTab = window.open(watchPage, '_blank');

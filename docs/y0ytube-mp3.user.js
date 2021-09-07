@@ -29,16 +29,20 @@ const cssStyles = `
 .savevideo-panel{width:auto;padding-left:12px;padding-right:12px;padding-top:10px;padding-bottom:16px;height:25px;outline:0;cursor:pointer;position:fixed;z-index:2147483647;transition:top .2s ease 0s;bottom:-2px;background:#fff;color:#fff;left:calc(100vw / 2 - 115px);border-top-left-radius:8px;border-top-right-radius:8px;border:2px dashed #000;margin:0 auto}.savevideo-panel>a{color:#666;background-color:#fff;padding:2px 5px;border:3px solid #000;text-decoration:none;text-transform:uppercase;display:inline-block;margin-right:0}.savevideo-panel>a:first-child{margin-right:-8px;border-top-left-radius:8px}.savevideo-panel>a:last-child{border-top-right-radius:8px}
 `;
 
-if (document.getElementById("browser-app") || document.getElementById("masthead") || window.Polymer) {
+if (window.location.href.indexOf("watch?v=") > -1 || document.getElementById("browser-app") || document.getElementById("masthead") || window.Polymer) {
     setInterval(function() {
-        if (window.location.href.indexOf("watch?v=") < 0) {
-            return false;
-        }
-        if (document.getElementById("meta-contents") && document.getElementById("punisherx") === null) {
-            // Is video change
+        if (window.location.href.indexOf("watch?v=") > -1) {
             url = window.location.href;
             id = ytIdFromUrl(url);
         }
+        // if (window.location.href.indexOf("watch?v=") < 0) {
+        //     return false;
+        // }
+        // if (document.getElementById("meta-contents") && document.getElementById("punisherx") === null) {
+        //     // Is video change
+        //     url = window.location.href;
+        //     id = ytIdFromUrl(url);
+        // }
     }, 1000);
 }
 

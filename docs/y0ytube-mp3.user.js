@@ -18,8 +18,8 @@
 // - Settings
 
 // Get id from url
-let url = window.location.href; //const
-let id = ytIdFromUrl(url);
+var url = window.location.href; //const
+var id = ytIdFromUrl(url); // let
 
 console.info('YT url: ' + url);
 console.info('YT id: ' + id);

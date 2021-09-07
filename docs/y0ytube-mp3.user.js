@@ -13,6 +13,8 @@
 // @grant        none
 // ==/UserScript==
 
+// TODO: Add check for change video (MutationObserver ?)
+
 // - Settings
 
 // Get id from url
@@ -33,10 +35,18 @@ if (url.indexOf('view')) {
     const wrap = document.createElement('div');
     wrap.class = 'savevideo-panel';
     wrap.innerHTML = `
-    <a href="#!" onclick="window.getMp3Btn()">Скачать <b>mp3</b></a>
-    <a href="#!" onclick="window.getMp4Btn()">Скачать <b>видео</b></a>
+    <a id="get-mp3" href="#!">Скачать <b>mp3</b></a>
+    <a id="get-mp4" href="#!">Скачать <b>видео</b></a>
 `;
     document.body.appendChild(wrap);
+
+    document.getElementById('get-mp3').onclick = function() {
+        getMp3Btn();
+    };
+
+    document.getElementById('get-mp4').onclick = function() {
+        getMp4Btn();
+    };
 
     const styles = document.createElement('style');
     styles.innerHTML = cssStyles;
@@ -54,14 +64,14 @@ function ytIdFromUrl(url){
 }
 
 // get mp3 btn
-window.getMp3Btn = function() {
+function getMp3Btn() {
     const watchPage = `https://pcmyonelove.github.io/ytbtn2-mp3.html?v6#${id}`;
     const filmTab = window.open(watchPage, '_blank');
     filmTab.focus();
 }
 
 // get mp4 btn
-window.getMp4Btn = function() {
+function getMp4Btn() {
     const watchPage = `https://pcmyonelove.github.io/ytbtn2-videos.html?v6#${id}`;
     const filmTab = window.open(watchPage, '_blank');
     filmTab.focus();

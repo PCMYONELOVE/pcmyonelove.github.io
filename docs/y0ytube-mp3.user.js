@@ -47,7 +47,7 @@ if (window.location.href.indexOf("watch?v=") > -1 || document.getElementById("br
 }
 
 // Show panelWrap
-if (url.indexOf('view') > -1) {
+if (url.indexOf('watch') > -1) {
 
     const wrap = document.createElement('div');
     wrap.classList.add('savevideo-panel');

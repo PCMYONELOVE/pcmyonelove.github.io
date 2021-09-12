@@ -30,11 +30,11 @@ encrypt: false
 ```
 
 ### Как это выглядит:
-<iframe src="https://www.yt-download.org/api/button/mp3/iiMrs3vOm_w" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
+<iframe src="https://www.yt-download.org/api/button/mp3/oExqVIPO6Lo" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
 
 >Видео:
 
-<iframe src="https://www.yt-download.org/api/button/videos/iiMrs3vOm_w" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
+<iframe src="https://www.yt-download.org/api/button/videos/oExqVIPO6Lo" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
 
 ## Кейс 2
 Вы хотите создать своё расширние для добавления кнопок скачиваия видео и музыки с ютуба. К сожалению, но гугл запретил расширениям вмешиваться в работу сервисов гугла, таки дела. Но если сильно хочется, можно попробовать создать расширение с определением погоды по коту а после прохождения проверки, добавить новый функционал в своё расширение. Но это не точно.

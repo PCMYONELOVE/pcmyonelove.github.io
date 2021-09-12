@@ -25,9 +25,9 @@ encrypt: false
 ## Кейс 1
 Вы хотите создать свой сервис по скачиванию видео и музыки с YouTube. Создаёте простой сайт, да хоть на WordPress и встраиваете маленький iframe, передавая ID видео из ютуба, добавляете любимубю партнерку с рекламой и пушами, всё.
 
-``html
+```html
 <iframe src="https://www.yt-download.org/api/button/mp3/iiMrs3vOm_w" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
-``;
+```
 
 ### Как это выглядит:
 <iframe src="https://www.yt-download.org/api/button/mp3/iiMrs3vOm_w" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
@@ -50,9 +50,9 @@ videos = MP4
 merged = WEBM / MKV
 
 Пример IFrame:
-``html
+```html
 <iframe src="https://www.yt-download.org/api/button/mp3/iiMrs3vOm_w" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
-``;
+```
 
 ## Виджет
 
@@ -64,8 +64,8 @@ videos = MP4
 merged = WEBM / MKV
 
 Пример IFrame:
-``html
+```html
 <iframe src="https://www.yt-download.org/api/widget/mp3/iiMrs3vOm_w" width="100%" height="100%" allowtransparency="true" scrolling="no" style="border:none"></iframe>
-``;
+```
 
 TODO: Добавить приятный бонус по кастомизации кнопок для читателей блога ;)

@@ -50,7 +50,6 @@
 			"settings":
 			{
 				"buffer_size": 596,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -61,6 +60,124 @@
 				"buffer_size": 596,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/www/OpenServer/domains/kinopoisk.local/index.html",
+			"settings":
+			{
+				"buffer_size": 4739,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/www/OpenServer/domains/kinopoisk.local/kpview.userscript.js",
+			"settings":
+			{
+				"buffer_size": 3487,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "// ==UserScript=="
+			}
+		},
+		{
+			"file": "themes/main/srcs/kpview.user.js",
+			"settings":
+			{
+				"buffer_size": 3487,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// ==UserScript==\n// @name         YT MP3 Download\n// @namespace    yt-mp3-download\n// @version      0.1\n// @description  Download mp3 from YouTube video\n// @author       PcMyOneLove\n// @match       *://youtube.com/*\n// @match       *://www.youtube.com/*\n// @match       *://tube.cadence.moe/*\n// @match       *://yewtu.be/*\n// @match       *://invidious.snopyta.org/*\n// @match       *://invidious-jp.kavin.rocks    /*\n// @grant        none\n// ==/UserScript==\n\n// Image of the banner\nconst bannerCode = `\n<style>\n.savevideo-panel{\n    width: auto;\n    padding-left: 12px;\n    padding-right: 12px;\n    padding-top: 10px;\n    padding-bottom: 16px;\n    height: 25px;\n    outline: none;\n    cursor: pointer;\n    position: fixed;\n    z-index: 2147483647;\n    transition: top 0.2s ease 0s;\n    bottom: -2px;\n    /* padding: 10px 2px; */\n    background: white;\n    color: white;\n    left: calc(100vw / 2 - 115px);\n    border-top-left-radius: 8px;\n    border-top-right-radius: 8px;\n    border: 2px dashed black;\n    margin: 0 auto;\n}\n\n.savevideo-panel > a{\n    color: #666;\n    background-color: white;\n    padding: 2px 5px;\n    border: 3px solid black;\n    text-decoration: none;\n    text-transform: uppercase;\n    display: inline-block;\n    margin-right: 0px;\n}\n\n.savevideo-panel > a:first-child{\n  margin-right: -8px;\n  border-top-left-radius: 8px;\n}\n\n.savevideo-panel > a:last-child{\n  border-top-right-radius: 8px;\n}\n</style>\n<div class=\"savevideo-panel\">\n  <a id=\"ytsavemp3\" onclick=\"openButton('mp3')\" href=\"#\">Скачать <b>mp3</b></a>\n  <a id=\"ytsavevideo\" onclick=\"openButton('videos')\" href=\"#\">Скачать <b>видео</b></a>\n</div>\n`;\n\n// Get id from url\nconst url = window.location.href;\nvar id = ytIdFromUrl(url);\n\nconsole.info('YT url: ' + url);\nconsole.info('YT id: ' + id);\n\n// Show banner\nif (url.indexOf('view')) {\n\n    // Create banner element\n    const banner = document.createElement('div');\n    banner.innerHTML = bannerCode;\n\n    // Show banner after timeout\n    setTimeout(() => {\n        banner.onclick = openPlayer;\n        banner.onmouseover = () => {banner.style.top = '0px'};\n        banner.onmouseout = () => {banner.style.top = '-32px'};\n    }, 1000);\n\n    // Add banner to the page\n    document.body.appendChild(banner);\n}\n\n// Get Youtube ID from url\nfunction ytIdFromUrl(url){\n    var regExp = /^.*((youtu.be\\/)|(v\\/)|(\\/u\\/\\w\\/)|(embed\\/)|(watch\\?))\\??v?=?([^#&?]*).*/;\n    var match = url.match(regExp);\n    return (match&&match[7].length==11)? match[7] : false;\n}\n\n// Open page with film player\nfunction openButton(type) {\n    const watchPage = `https://pcmyonelove.github.io/ytbtn2-${type}.html?v1#${id}`;\n    const filmTab = window.open(watchPage, '_blank');\n    filmTab.focus();\n}",
+			"file": "themes/main/srcs/ytmp3alt.user.js",
+			"file_size": 2827,
+			"file_write_time": 132754143820193157,
+			"settings":
+			{
+				"buffer_size": 2704,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/srcs/js/youtub-uni.user.js",
+			"settings":
+			{
+				"buffer_size": 2939,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Workspace/Drezden_VK_AutoResponse__trash.php",
+			"settings":
+			{
+				"buffer_size": 20215,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/srcs/y0ytube-mp3.user.js",
+			"settings":
+			{
+				"buffer_size": 3970,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/layouts/tag.njk",
+			"settings":
+			{
+				"buffer_size": 1619,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/srcs/ytbtn2-videos.html",
+			"settings":
+			{
+				"buffer_size": 3553,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Admin/Desktop/musical-beam-note-svgrepo-com.svg.svg",
+			"settings":
+			{
+				"buffer_size": 917,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/main/srcs/ytbtn2.html",
+			"settings":
+			{
+				"buffer_size": 3547,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Admin/Desktop/Новый текстовый документ (3).txt",
+			"settings":
+			{
+				"buffer_size": 1482,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/www/OpenServer/domains/kinopoisk.local/ytbtn2.html",
+			"settings":
+			{
+				"buffer_size": 3391,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -84,6 +201,15 @@
 			}
 		},
 		{
+			"file": "themes/main/srcs/js/test/medium-pwa-loader.js",
+			"settings":
+			{
+				"buffer_size": 795,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "themes/main/srcs/js/test/medium-pwa-sw.js",
 			"settings":
 			{
@@ -97,24 +223,6 @@
 			"settings":
 			{
 				"buffer_size": 856,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "themes/main/srcs/js/test/medium-pwa-loader.js",
-			"settings":
-			{
-				"buffer_size": 795,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "themes/main/srcs/js/test/pwa-manifest.json",
-			"settings":
-			{
-				"buffer_size": 596,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -357,6 +465,7 @@
 	"expanded_folders":
 	[
 		"/C/Users/Admin/Documents/WEB/pcmyonelove",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/node_modules",
 		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes",
 		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main",
 		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/layouts",
@@ -368,6 +477,9 @@
 	],
 	"file_history":
 	[
+		"/C/www/OpenServer/domains/kinopoisk.local/vktest.html",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/srcs/ytbtn2-video.html",
+		"/C/Users/Admin/Documents/WEB/pcmyonelove/themes/main/srcs/ytmp3.user.js",
 		"/C/Users/Admin/Desktop/PWA/manifest.json",
 		"/C/Portable_Soft/Sublime Text 3/Data/Packages/TodoReview/TodoReview.sublime-settings",
 		"/C/Portable_Soft/Sublime Text 3/Data/Packages/User/TodoReview.sublime-settings",
@@ -492,14 +604,11 @@
 		"/C/Users/Admin/AppData/Local/Temp/scp27998/public_html/qiwi_pay_simple.php",
 		"/C/Users/Admin/AppData/Local/Temp/scp06342/public_html/tg.class.php",
 		"/C/Users/Admin/AppData/Local/Temp/scp08486/public_html/test.txt",
-		"/C/Users/Admin/AppData/Local/Temp/scp56866/public_html/TextToImage.php",
-		"/C/Users/Admin/AppData/Local/Temp/scp07906/public_html/test2.php",
-		"/C/Users/Admin/AppData/Local/Temp/scp14415/error_log",
-		"/C/Users/Admin/AppData/Local/Temp/scp23924/public_html/webhook.php"
+		"/C/Users/Admin/AppData/Local/Temp/scp56866/public_html/TextToImage.php"
 	],
 	"find":
 	{
-		"height": 44.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -534,7 +643,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -619,10 +728,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1227.0,
+						"translation.y": 1016.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
@@ -650,7 +759,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
@@ -683,7 +792,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
@@ -763,7 +872,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -843,11 +952,1265 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "/C/www/OpenServer/domains/kinopoisk.local/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4739,
+						"regions":
+						{
+							"col_000000BF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1239,
+										1258
+									]
+								],
+								"scope": "col_000000BF"
+							},
+							"col_000000BF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000BF_circle.png",
+								"regions":
+								[
+									[
+										1209,
+										1209
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1305,
+										1310
+									],
+									[
+										2924,
+										2931
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										1260,
+										1260
+									],
+									[
+										2840,
+										2840
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_3F51B5FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										500,
+										507
+									],
+									[
+										509,
+										516
+									]
+								],
+								"scope": "col_3F51B5FF"
+							},
+							"col_3F51B5FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_3F51B5FF_circle.png",
+								"regions":
+								[
+									[
+										453,
+										453
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EBFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+								],
+								"scope": "col_EBFFFFFF"
+							},
+							"col_EBFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EBFFFFFF_circle.png",
+								"regions":
+								[
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										416,
+										421
+									],
+									[
+										1617,
+										1622
+									],
+									[
+										1965,
+										1970
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										397,
+										397
+									],
+									[
+										1598,
+										1598
+									],
+									[
+										1946,
+										1946
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								4138,
+								4177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/www/OpenServer/domains/kinopoisk.local/kpview.userscript.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3487,
+						"regions":
+						{
+							"col_3F51B5FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										689,
+										696
+									]
+								],
+								"scope": "col_3F51B5FF"
+							},
+							"col_3F51B5FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_3F51B5FF_circle.png",
+								"regions":
+								[
+									[
+										590,
+										590
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EBFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1917,
+										1933
+									]
+								],
+								"scope": "col_EBFFFFFF"
+							},
+							"col_EBFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EBFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										753,
+										753
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F7581BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2226,
+										2240
+									]
+								],
+								"scope": "col_F7581BFF"
+							},
+							"col_F7581BFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F7581BFF_circle.png",
+								"regions":
+								[
+									[
+										1976,
+										1976
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F80C65FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2158,
+										2173
+									]
+								],
+								"scope": "col_F80C65FF"
+							},
+							"col_F80C65FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F80C65FF_circle.png",
+								"regions":
+								[
+									[
+										1976,
+										1976
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								3487
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// ==UserScript==",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "themes/main/srcs/kpview.user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3487,
+						"regions":
+						{
+							"col_3F51B5FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										689,
+										696
+									]
+								],
+								"scope": "col_3F51B5FF"
+							},
+							"col_3F51B5FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_3F51B5FF_circle.png",
+								"regions":
+								[
+									[
+										590,
+										590
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EBFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1917,
+										1933
+									]
+								],
+								"scope": "col_EBFFFFFF"
+							},
+							"col_EBFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EBFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										753,
+										753
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F7581BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2226,
+										2240
+									]
+								],
+								"scope": "col_F7581BFF"
+							},
+							"col_F7581BFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F7581BFF_circle.png",
+								"regions":
+								[
+									[
+										1976,
+										1976
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_F80C65FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2158,
+										2173
+									]
+								],
+								"scope": "col_F80C65FF"
+							},
+							"col_F80C65FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F80C65FF_circle.png",
+								"regions":
+								[
+									[
+										1976,
+										1976
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								3487
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "themes/main/srcs/ytmp3alt.user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2704,
+						"regions":
+						{
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										998,
+										1003
+									],
+									[
+										1140,
+										1145
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										975,
+										975
+									],
+									[
+										1118,
+										1118
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_3F51B5FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+								],
+								"scope": "col_3F51B5FF"
+							},
+							"col_3F51B5FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_3F51B5FF_circle.png",
+								"regions":
+								[
+								],
+								"scope": "col_gutter"
+							},
+							"col_666666FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1061,
+										1065
+									]
+								],
+								"scope": "col_666666FF"
+							},
+							"col_666666FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_666666FF_circle.png",
+								"regions":
+								[
+									[
+										1050,
+										1050
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_EBFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+								],
+								"scope": "col_EBFFFFFF"
+							},
+							"col_EBFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_EBFFFFFF_circle.png",
+								"regions":
+								[
+								],
+								"scope": "col_gutter"
+							},
+							"col_F7581BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+								],
+								"scope": "col_F7581BFF"
+							},
+							"col_F7581BFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F7581BFF_circle.png",
+								"regions":
+								[
+								],
+								"scope": "col_gutter"
+							},
+							"col_F80C65FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+								],
+								"scope": "col_F80C65FF"
+							},
+							"col_F80C65FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F80C65FF_circle.png",
+								"regions":
+								[
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										848,
+										853
+									],
+									[
+										866,
+										871
+									],
+									[
+										1089,
+										1094
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										832,
+										832
+									],
+									[
+										855,
+										855
+									],
+									[
+										1067,
+										1067
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								1583,
+								1583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1056.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "themes/main/srcs/js/youtub-uni.user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2939,
+						"regions":
+						{
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										998,
+										1003
+									],
+									[
+										1140,
+										1145
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										975,
+										975
+									],
+									[
+										1118,
+										1118
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_666666FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1061,
+										1065
+									]
+								],
+								"scope": "col_666666FF"
+							},
+							"col_666666FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_666666FF_circle.png",
+								"regions":
+								[
+									[
+										1050,
+										1050
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										848,
+										853
+									],
+									[
+										866,
+										871
+									],
+									[
+										1089,
+										1094
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										832,
+										832
+									],
+									[
+										855,
+										855
+									],
+									[
+										1067,
+										1067
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								461,
+								461
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1056.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Workspace/Drezden_VK_AutoResponse__trash.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5974,
+								5984
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "themes/main/srcs/y0ytube-mp3.user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3970,
+						"regions":
+						{
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1183,
+										1187
+									],
+									[
+										1287,
+										1291
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										842,
+										842
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_666666FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1227,
+										1231
+									]
+								],
+								"scope": "col_666666FF"
+							},
+							"col_666666FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_666666FF_circle.png",
+								"regions":
+								[
+									[
+										842,
+										842
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1065,
+										1069
+									],
+									[
+										1076,
+										1080
+									],
+									[
+										1249,
+										1253
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										842,
+										842
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								2203,
+								2203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1320.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "themes/main/layouts/tag.njk",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "themes/main/srcs/ytbtn2-videos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3553,
+						"regions":
+						{
+							"col_F44336FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										819,
+										826
+									]
+								],
+								"scope": "col_F44336FF"
+							},
+							"col_F44336FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F44336FF_circle.png",
+								"regions":
+								[
+									[
+										386,
+										386
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										796,
+										801
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										386,
+										386
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								1493,
+								1493
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/Admin/Desktop/musical-beam-note-svgrepo-com.svg.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 917,
+						"regions":
+						{
+							"col_010002FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										901,
+										908
+									]
+								],
+								"scope": "col_010002FF"
+							},
+							"col_010002FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_010002FF_circle.png",
+								"regions":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								917,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "themes/main/srcs/ytbtn2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3547,
+						"regions":
+						{
+							"col_F44336FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										819,
+										826
+									]
+								],
+								"scope": "col_F44336FF"
+							},
+							"col_F44336FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F44336FF_circle.png",
+								"regions":
+								[
+									[
+										386,
+										386
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										796,
+										801
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										386,
+										386
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								3458,
+								3458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1034.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/C/Users/Admin/Desktop/Новый текстовый документ (3).txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1482
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/C/www/OpenServer/domains/kinopoisk.local/ytbtn2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3391,
+						"regions":
+						{
+							"col_F44336FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										819,
+										826
+									]
+								],
+								"scope": "col_F44336FF"
+							},
+							"col_F44336FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F44336FF_circle.png",
+								"regions":
+								[
+									[
+										386,
+										386
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										796,
+										801
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										386,
+										386
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								1886,
+								1886
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
 					"file": "themes/main/srcs/js/pwa-loader.js___",
 					"semi_transient": false,
 					"settings":
@@ -873,11 +2236,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 19,
 					"file": "themes/main/srcs/js/easy-pwa-loader.js",
 					"semi_transient": false,
 					"settings":
@@ -903,11 +2266,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 20,
+					"file": "themes/main/srcs/js/test/medium-pwa-loader.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								795,
+								795
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
 					"file": "themes/main/srcs/js/test/medium-pwa-sw.js",
 					"semi_transient": false,
 					"settings":
@@ -919,8 +2311,8 @@
 						"selection":
 						[
 							[
-								678,
-								678
+								781,
+								731
 							]
 						],
 						"settings":
@@ -937,7 +2329,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 22,
 					"file": "themes/main/srcs/easy-pwa-sw.js",
 					"semi_transient": false,
 					"settings":
@@ -963,116 +2355,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "themes/main/srcs/js/test/medium-pwa-loader.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 795,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								795,
-								795
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "themes/main/srcs/js/test/pwa-manifest.json",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 596,
-						"regions":
-						{
-							"col_33363BFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										498,
-										505
-									]
-								],
-								"scope": "col_33363BFF"
-							},
-							"col_33363BFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_33363BFF_circle.png",
-								"regions":
-								[
-									[
-										480,
-										480
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FFFFFFFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										470,
-										477
-									]
-								],
-								"scope": "col_FFFFFFFF"
-							},
-							"col_FFFFFFFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
-								"regions":
-								[
-									[
-										447,
-										447
-									]
-								],
-								"scope": "col_gutter"
-							}
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 19,
 					"type": "text"
 				}
 			]
@@ -1195,7 +2478,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 466.0,
+	"side_bar_width": 450.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

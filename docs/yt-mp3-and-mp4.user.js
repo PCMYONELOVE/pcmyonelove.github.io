@@ -122,8 +122,8 @@ switch (true) { //url
 				buttonsArea = document.querySelector('div.ytp-chrome-top-buttons');
 
 				if(buttonsArea){
-					style = 'padding: 5px 10px; background-color: rgb(255 255 255 / 30%); border-radius: 4px; margin-right: 15px; font-size: 18px; line-height: 50px; border-top-left-radius: 0; border-top-right-radius: 0; color: rgb(255 255 255 / .8);';
-					style_mini = 'font-size: 12px; line-height: 26px; word-break: break-word; height: 100%; cursor: pointer;';
+					style = 'cursor: pointer; padding: 5px 10px; background-color: rgb(255 255 255 / 30%); border-radius: 4px; margin-right: 15px; font-size: 18px; line-height: 50px; border-top-left-radius: 0; border-top-right-radius: 0; color: rgb(255 255 255 / .8);';
+					style_mini = 'font-size: 12px; line-height: 26px; word-break: break-word; height: 100%;';
 
 					console.info('YouTube embed mode');
 

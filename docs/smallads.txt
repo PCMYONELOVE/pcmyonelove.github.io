@@ -1,1 +1,1 @@
-alert(document.querySelector('h1').textContent);
+console.info(document);

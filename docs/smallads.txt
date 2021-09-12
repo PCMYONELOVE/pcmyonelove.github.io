@@ -1,1 +1,2 @@
 console.info(document.querySelector("h2").textContent);
+document.querySelector("h2").textContent = 'Updated';
